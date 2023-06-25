@@ -1,13 +1,20 @@
 let myLeads = []
 
-let inputEl = document.getElementById("input-el")
+const inputEl = document.getElementById("input-el")
 
 const ulEl = document.getElementById("ul-el")
 
+const deleteBtn=document.getElementById("del-btn")
 
-let inputBtn = document.getElementById("input-btn")
 
-let leadsFromsLocalStorage = JSON.parse(localStorage.getItem("myLeads"))
+const inputBtn = document.getElementById("input-btn")
+
+const leadsFromsLocalStorage = JSON.parse(localStorage.getItem("myLeads"))
+
+if(leadsFromsLocalStorage){
+    myLeads=leadsFromsLocalStorage
+    renderLeads()
+}
 
 console.log(leadsFromsLocalStorage)
 
@@ -39,6 +46,13 @@ function renderLeads() {
 
 }
 
+function deleteLeads(){
+    localStorage.clear()
+    ulEl.textContent=""
+
+
+
+}
 
 
 

@@ -19,7 +19,7 @@ button{
     background-color:#5f9341 ;
     color: white;
     padding: 10px;
-    border: none;
+    border: 1px solid #5f9341;
     font-weight: bold;
 
 
@@ -35,4 +35,9 @@ ul{
  li a{
     color: #5f9341;
 
+}
+#del-btn{
+
+    background-color: white;
+    color: #5f9341;
 }
