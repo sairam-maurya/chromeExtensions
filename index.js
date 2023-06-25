@@ -46,13 +46,21 @@ function renderLeads() {
 
 }
 
-function deleteLeads(){
+deleteBtn.addEventListener("dblclick", function(){
     localStorage.clear()
-    ulEl.textContent=""
+    ulEl.textContent = ""
+})
 
 
 
-}
+
+// function deleteLeads(){
+//     localStorage.clear()
+//     ulEl.textContent=""
+
+
+
+// }
 
 
 
